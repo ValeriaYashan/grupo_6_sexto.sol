@@ -1,7 +1,7 @@
 const express = require('express');
 const path = require('path');
 const app = express();
-/*const ejs = require('ejs');*/
+const ejs = require('ejs');
 const session = require('express-session');
 /*const bcrypt = require('bcrypt');*/
 const cookieParser = require('cookie-parser');
@@ -41,7 +41,7 @@ app.use(session({
 //Configuración de cookies
 app.use(cookieParser());
 
-//Verificando si hay cookie con usuario
+//verificar recordar usuario no funciona porque necesito prueba
 /*app.use(rememberUser);*/
 
 

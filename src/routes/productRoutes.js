@@ -55,7 +55,7 @@ router.get("/list", productController.productList);
 router.delete("/:id/delete", productController.delete);
 
 /*----Rutas para vista de finalizar compra----*/
-router.get('/finalizaCompra',logMiddleware, productController.finalizaCompra);
+/*router.get('/finalizaCompra',logMiddleware, productController.finalizaCompra);*/
 
 /*----Rutas para vista de detalle de producto----*/
 router.get('/:id', productController.productDetail);

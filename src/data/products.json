@@ -1,0 +1,138 @@
+[
+    {
+     "id": 3,
+     "name": "Cola de Tigre",
+     "description": "\r\nEsta planta ssssxx sss llll sss llla nnn lllla.",
+     "price": 349,
+     "discount": 20,
+     "category": "sinflor",
+     "size": {
+      "S": 20,
+      "M": 20,
+      "L": 20
+     },
+     "images": [
+      "img-cola-de-tigre.jpg"
+     ],
+     "material": "cerámica"
+    },
+    {
+     "id": 4,
+     "name": "Monstera deliciosa",
+     "description": "\r\nEsta planta ssssxx sss llll sss llla nnn lllla.",
+     "price": 349,
+     "discount": 20,
+     "category": "sinflor",
+     "size": {
+      "S": 20,
+      "M": 20,
+      "L": 20
+     },
+     "images": [
+      "img-monstera-deliciosa.jpg"
+     ],
+     "material": "cerámica"
+    },
+    {
+     "id": 5,
+     "name": "Potus",
+     "description": "\r\nEsta planta ssssxx sss llll sss llla nnn lllla.",
+     "price": 349,
+     "discount": 20,
+     "category": "sinflor",
+     "size": {
+      "S": 20,
+      "M": 20,
+      "L": 20
+     },
+     "images": [
+      "img-potus.jpg"
+     ],
+     "material": "porcelana"
+    },
+    {
+     "id": 6,
+     "name": "Begonia",
+     "description": "\r\nEsta planta ssssxx sss llll sss llla nnn lllla.",
+     "price": 700,
+     "discount": 20,
+     "category": "conflor",
+     "size": {
+      "S": 20,
+      "M": 20,
+      "L": 20
+     },
+     "images": [
+       "img-begonia.jpg"
+     ],
+     "material": "cerámica"
+    },
+    {
+     "id": 7,
+     "name": "Bromelia",
+     "description": "Sus flores tienen un cáliz muy profundo.",
+     "price": 349,
+     "discount": 20,
+     "category": "conflor",
+     "size": {
+      "S": 20,
+      "M": 20,
+      "L": 20
+     },
+     "images": [
+      "img-bromelia.jpg"
+     ],
+     "material": "cerámica"
+    },
+    {
+     "id": 8,
+     "name": "Crisantemo amarillo",
+     "description": "\r\nEsta planta ssssxx sss llll sss llla nnn lllla.",
+     "price": 800,
+     "discount": 20,
+     "category": "conflor",
+     "size": {
+      "S": 20,
+      "M": 20,
+      "L": 20
+     },
+     "images": [
+      "img-crisantemo-amarillo.jpg"
+     ],
+     "material": "cerámica"
+    },
+    {
+     "id": 8,
+     "name": "Rosas blancas",
+     "description": "\r\nEsta planta ssssxx sss llll sss llla nnn lllla.",
+     "price": 1500,
+     "discount": 20,
+     "category": "conflor",
+     "size": {
+      "S": 20,
+      "M": 20,
+      "L": 20
+     },
+     "images": [
+      "img-rosas-blancas.jpg"
+     ],
+     "material": "cerámica"
+    },
+    {
+     "id": 9,
+     "name": "Rosas rojas",
+     "description": "\r\nEsta planta ssssxx sss llll sss llla nnn lllla.",
+     "price": 982,
+     "discount": 20,
+     "category": "conflor",
+     "size": {
+      "S": 20,
+      "M": 20,
+      "L": 20
+     },
+     "images": [
+      "img-rosas-rojas.jpg"
+     ],
+     "material": "cerámica"
+    }
+   ]

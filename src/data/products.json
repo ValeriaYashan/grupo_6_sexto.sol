@@ -1,27 +1,9 @@
 [
  {
-  "id": 1,
-  "name": "Cola de Tigre",
-  "description": "La sansevieria trifasciata es una planta muy utilizada en el interior y que destaca por su fácil cuidado. A menudo es llamada también cola de lucio, lengua de suegra, lengua de gato, lengua de tigre o espada de San Jorge. Cuenta con muchas subespecies, como la sansevieria laurentii.",
-  "price": 800,
-  "discount": 20,
-  "category": "sinflor",
-  "size": {
-   "S": 20,
-   "M": 20,
-   "L": 20
-  },
-  "images": [
-   "img-cola-de-tigre.jpg"
-  ],
-  "material": "cerámica"
- },
- {
   "id": 2,
-  "name": "Monstera deliciosa",
+  "name": "Monstera deliciosa (costilla de Adán)",
   "description": "Monstera deliciosa, llamada comúnmente cerimán o costilla de Adán, es una especie de planta trepadora de la familia Araceae, endémica de selvas tropicales, que se distribuye desde el centro y sur de México hasta el norte de Argentina.",
-  "price": 600,
-  "discount": 20,
+  "price": 800,
   "category": "sinflor",
   "size": {
    "S": 20,
@@ -30,15 +12,13 @@
   },
   "images": [
    "img-monstera-deliciosa.jpg"
-  ],
-  "material": "cerámica"
+  ]
  },
  {
   "id": 3,
-  "name": "Potus",
+  "name": "Potus (Pothos)",
   "description": "Epipremnum aureum, comúnmente conocido como potus, pothos o potos es una especie de la familia Araceae nativa del sudeste asiático y Nueva Guinea. En ocasiones es confundida con philodendron en las floristerías. ",
   "price": 1500,
-  "discount": 20,
   "category": "sinflor",
   "size": {
    "S": 20,
@@ -47,8 +27,7 @@
   },
   "images": [
    "img-potus.jpg"
-  ],
-  "material": "porcelana"
+  ]
  },
  {
   "id": 4,
@@ -85,9 +64,7 @@
   "id": 6,
   "name": "Crisantemo amarillo",
   "description": "Su nombre proviene de las palabras griegas cyrsos (oro) y anthemon (flor) y en el antiguo Japón esta planta era símbolo de la felicidad. Está disponible en formato pequeño y produce vistosas flores en distintos colores como amarillo, blanco, violeta, rojo y morado.",
-  "price": 800,
-  "discount": 20,
-  "category": "conflor",
+  "price": 1800,
   "size": {
    "S": 20,
    "M": 20,
@@ -95,16 +72,13 @@
   },
   "images": [
    "img-crisantemo-amarillo.jpg"
-  ],
-  "material": "cerámica"
+  ]
  },
  {
   "id": 7,
   "name": "Rosas blancas",
   "description": "Por su significado de paz y tranquilidad, las flores blancas son también las más utilizadas para dar ánimos a una persona que padece una enfermedad. Nada como la frescura de las rosas blancas o de cualquier otro tipo de flor de este color para demostrar tu apoyo en los malos momentos.",
-  "price": 1500,
-  "discount": 20,
-  "category": "conflor",
+  "price": 3000,
   "size": {
    "S": 20,
    "M": 20,
@@ -112,8 +86,7 @@
   },
   "images": [
    "img-rosas-blancas.jpg"
-  ],
-  "material": "cerámica"
+  ]
  },
  {
   "id": 8,

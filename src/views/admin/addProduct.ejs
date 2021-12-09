@@ -17,6 +17,17 @@
                         <input type="text" name ="name" id="nombre" placeholder="Nombre">
                     </section>
     
+                    <section class="categoria">
+                    <label for="categoria">Categoría: </label>
+                    <div class="cat-opcion">
+                        <input type="radio" name="category" id = "sinflor" value="sinflor" checked>
+                        <label for="sinflor">Plantas sin flor</label>
+                        <div class="cat-opcion">
+                            <input type="radio" name="category" id = "conflor" value="conflor"> 
+                            <label for="conflor">Plantas con flor</label>
+                        </div>
+                    </section>
+
                     <section class="descripcion">  
                         <label for="descripcion">Descripción:</label>
                         <textarea name ="description" id="descripcion" rows="5" placeholder="Escribe una breve descripción"></textarea>
@@ -27,30 +38,22 @@
                         <input type="text" name ="price" id="precio">
                     </section>
 
-                    <section class="categoria">
-                        <label for="categoria">Categoría: </label>
-                        <div class="cat-opcion">
-                            <input type="radio" name="category" id = "sinflor" value="sinflor" checked>
-                            <label for="sinflor">Plantas sin flor</label>
-                        </div>
-                        <div class="cat-opcion">
-                            <input type="radio" name="category" id = "conflor" value="conflor"> 
-                            <label for="conflor">Plantas con flor</label>
-                        </div>
-                    </section>
+                   
+                       
+                        
                     <section class="materials">
                         <label for="materials">Material: </label>
                         <div class="mat-opcion">
                             <input type="radio" name="materials" id = "porcelana" value="porcelana" checked>
-                            <label for="oro">Oro</label>
+                            <label for="Porcelana">Porcelana</label>
                         </div>
                         <div class="mat-opcion">
                             <input type="radio" name="materials" id = "cerámica" value="cerámica"> 
-                            <label for="plata">Plata</label>
+                            <label for="Cerámica">Cerámica</label>
                         </div>
                         <div class="mat-opcion">
                             <input type="radio" name="materials" id = "plástico" value="plástico">
-                            <label for="acero"> Acero</label>
+                            <label for="Plástico"> Plástico</label>
                         </div>
                     </section>
     

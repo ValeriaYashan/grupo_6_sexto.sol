@@ -50,13 +50,14 @@ router.get('/productCart', logMiddleware, productController.productCart);
 
 // carrito
 router.get('/cart', productController.cart);
-
+router.get('/productCart', productController.productCart);
 //listado de productos + borrado 
 router.get("/list", productController.productList);
 router.get("/create", productController.newProductView);
 
-
+//Borrar productos
 router.delete("/:id/delete", productController.delete);
+
 //Actualizar productos
 
  router.get("/:id/update", productController.edit);

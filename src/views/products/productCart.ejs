@@ -1,105 +1,184 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <%- include('../partials/head.ejs') %>
-    <link rel="stylesheet" href="/css/productCart.css">
-    <title>JFL Bisutería</title>
-</head>
-<body>
-    <%- include('../partials/header') %>
-    <main>
-        <!-- Encabezado del carrito -->
-        <div class="encabezado">
-            <h1>Mi carrito</h1>
-        </div>
-        <section class="carrito-general">
+<html lang="es">
 
-                <div class="cuadro-productos">
-                    <!-- Visualización de productos -->
-                    <div class="visualizacion-productos">
+<%- include("../partials/head.ejs")%>
 
-                        <div class="imagen-producto">
-                            <img class= "img" src="/img/Imagen1_carrito.png" alt="imagen-producto">
-                        </div>
+    <body>
 
-                        <div class="resumen">
-                            <p>Producto</p>
-                            <form action="">
-                                <label for="prodcut-cart-size">Talla: </label>
-                                <select name="quantity" id="prodcut-cart-quantity">
-                                    <option value="1">S</option>
-                                    <option value="2">M</option>
-                                    <option value="3">L</option>
-                                </select>
-                            </form>
-                            <div class="cantidad_car">
-                                <p>Cantidad:</p>
-                                <div class="masmenos">
-                                    <button class="btn" id="menos"><i class="fas fa-minus"></i></button>
-                                    <input id="cantidad" type="text" style="text-align: center;" value="1">
-                                    <button class="btn" id="mas"><i class="fas fa-plus"></i></button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="total">
-                            <p>Precio:$$$</p>
-                            <button><img src="/img/Trash.svg"></button>
-                        </div>
-                    </div>
-
-                    <!-- Visualización de productos -->
-                    <div class="visualizacion-productos">
-
-                        <div class="imagen-producto">
-                            <img class= "img" src="/img/Imagen2_carrito.png" alt="imagen-producto">
-                        </div>
-
-                        <div class="resumen">
-                            <p>Producto</p>
-                            <form action="">
-                                <label for="prodcut-cart-size">Talla: </label>
-                                <select name="quantity" id="prodcut-cart-quantity">
-                                    <option value="1">S</option>
-                                    <option value="2">M</option>
-                                    <option value="3">L</option>
-                                </select>
-                            </form>
-                            <div class="cantidad_car">
-                                <p>Cantidad:</p>
-                                <div class="masmenos">
-                                    <button class="btn" id="menos"><i class="fas fa-minus"></i></button>
-                                    <input id="cantidad" type="text" style="text-align: center;" value="1">
-                                    <button class="btn" id="mas"><i class="fas fa-plus"></i></button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="total">
-                            <p>Precio:$$$</p>
-                            <button><img src="/img/Trash.svg"></button>
-                        </div>
+        <%- include("../partials/header.ejs") %>
+            <div class="container carrito-de-compras">
+                <div class="row">
+                    <div class="col-12 my-5">
+                        <h1>Carrito de Compras</h1>
+                        <a href="/">Regresar a inicio y seguir buscando</a>
                     </div>
                 </div>
 
-                <div class="cuadro-resumen">
-                    <!-- Precios -->
-                    <div class="precios">
-                        <div class="desglose-indiv">
-                            <p>Subtotal: $$$</p>
-                            <p>Impuesto: $$$</p>
-                            <p>Envío: $$$</p>
-                            <p>Total: $$$</p>
-                        </div>
-                    </div>
+                <div class="row my-5">
 
-                    <!-- Confirmación     -->
-                    <div class="btn-pagar">
-                        <button class="submit" type="submit">Ir a pagos</button>
+                    <!-- Articulo -->
+                    <div class="col-12 col-lg-4">
+                        <div class="row">
+                            <div class="col-12 mt-3">
+                                <h2>Nombre del producto</h2>
+                            </div>
+
+                            <div class="col-12 mt-1">
+                                <p>
+                                    Descripción:
+                                    <br>Lorem ipsum dolor sit amet consectetur adipisicing elit
+                                </p>
+                            </div>
+
+                            <div class="col-12 mb-3">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <img src="/img/crisantemo-amarillo.jpg" alt="producto" width="75%">
+                                    </div>
+                                    <div class="col-2">
+                                        <button>-</button>
+                                    </div>
+                                    <div class="col-2">
+                                        <button>+</button>
+                                    </div>
+                                    <div class="col-2">
+                                        <button>
+                                            <i class="fas fa-trash-alt"></i>
+                                        </button>
+                                    </div>
+                                    <div class="col-3 text-center">
+                                        <p>
+                                            $2.500,00
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
                     </div>
-                </div>  
-        </section>
-    </main>
-    <%- include('../partials/footer') %>
-</body>
+                    <!-- Articulo -->
+
+                    <!-- Articulo -->
+                    <div class="col-12 col-lg-4">
+                        <div class="row">
+                            <div class="col-12 mt-3">
+                                <h2>Nombre del producto</h2>
+                            </div>
+
+                            <div class="col-12 mt-1">
+                                <p>
+                                    Descripción:
+                                    <br>Lorem ipsum dolor sit amet consectetur adipisicing elit
+                                </p>
+                            </div>
+
+                            <div class="col-12 mb-3">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <img src="/img/aloe-vera.jpg" alt="producto" width="75%">
+                                    </div>
+                                    <div class="col-2">
+                                        <button>-</button>
+                                    </div>
+                                    <div class="col-2">
+                                        <button>+</button>
+                                    </div>
+                                    <div class="col-2">
+                                        <button>
+                                            <i class="fas fa-trash-alt"></i>
+                                        </button>
+                                    </div>
+                                    <div class="col-3 text-center">
+                                        <p>
+                                            $1.500,00
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                    <!-- Articulo -->
+
+                    <!-- Articulo -->
+                    <div class="col-12 col-lg-4">
+                        <div class="row">
+                            <div class="col-12 mt-3">
+                                <h2>Nombre del producto</h2>
+                            </div>
+
+                            <div class="col-12 mt-1">
+                                <p>
+                                    Descripción:
+                                    <br>Lorem ipsum dolor sit amet consectetur adipisicing elit
+                                </p>
+                            </div>
+
+                            <div class="col-12 mb-3">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <img src="/img/arbol-jade.jpg" alt="producto" width="75%">
+                                    </div>
+                                    <div class="col-2">
+                                        <button>-</button>
+                                    </div>
+                                    <div class="col-2">
+                                        <button>+</button>
+                                    </div>
+                                    <div class="col-2">
+                                        <button>
+                                            <i class="fas fa-trash-alt"></i>
+                                        </button>
+                                    </div>
+                                    <div class="col-3 text-center">
+                                        <p>
+                                            $3.000,00
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                    <!-- Articulo -->
+
+
+
+
+
+
+                </div>
+
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        Cantidad = 0
+                    </div>
+                    <div class="col-12">
+                        Subtotal = $0.00
+                    </div>
+                    <div class="col-12">
+                        <p>Impuesto: $$$</p>
+                    </div>
+                    <div class="col-12">
+                    <p>Envío: $$$</p>
+                </div>
+                    <div class="col-12">
+                        <strong>
+                            Total = $0.00
+                        </strong>
+                    </div>
+            
+            <%- include("../partials/footer.ejs") %>
+    </body>
+
+
 </html>

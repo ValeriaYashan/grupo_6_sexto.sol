@@ -16,11 +16,11 @@ const productController = {
     productCart : (req, res) => {
         res.render('./products/productCart')
     },
-    /*productCart : (req, res) => {
+    productCart : (req, res) => {
         res.render('./products/productCart', {user: req.session.user ? req.session.user : undefined});
-    },*/
+    },
     cart : (req, res) => {
-        res.render('./products/cart', {user: req.session.user ? req.session.user : undefined});
+        res.render('./products/productCart', {user: req.session.user ? req.session.user : undefined});
     },
     sinflor : (req, res) => {
         const products = JSON.parse(fs.readFileSync(productsPath, 'utf-8'));
@@ -51,6 +51,8 @@ const productController = {
         } else {
             productList = JSON.parse(productListJSON);
         };
+        
+
         let product = {
             id: productList.length + 1,
             category: req.body.productCategory,
@@ -221,6 +223,7 @@ const productController = {
             if (boxValue[i].id == req.params.id) {
                 let id = boxValue[i].id - 1;
                 res.render("products/edit", { "boxValue": boxValue, "id": id, });
+              
             }
         }
     },

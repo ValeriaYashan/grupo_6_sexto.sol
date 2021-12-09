@@ -53,10 +53,10 @@ const productController = {
         };
         let product = {
             id: productList.length + 1,
+            category: req.body.productCategory,
             name: req.body.productName,
             desc: req.body.productDescription,
             img: req.body.productFile,
-            category: req.body.productCategory,
             size: req.body.productSize,
             price: req.body.productPrice,
 
@@ -110,11 +110,11 @@ const productController = {
 
         const newProduct ={
             id: products[products.length -1].id + 1,
+            category: productCategory,
             name: productName,
             description: productDescription,
             price: productPrice,
-            discount: productDiscount,
-            category: productCategory,
+          
             size: {
                 S: productQuantS,
                 M: productQuantM,
@@ -142,10 +142,9 @@ const productController = {
 
         // Ordenamos la info recibida en el formulario
         const productName = req.body.name,
+                productCategory = req.body.category,
                 productDescription = req.body.description,
                 productPrice = parseFloat(req.body.price),
-                productDiscount = parseFloat(req.body.discount),
-                productCategory = req.body.category,
                 productMaterial = req.body.materials,
                 productQuantS = parseInt(req.body.quantityS) || 0,
                 productQuantM = parseInt(req.body.quantityM) || 0,

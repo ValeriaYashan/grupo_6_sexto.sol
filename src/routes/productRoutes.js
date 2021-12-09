@@ -54,7 +54,13 @@ router.get('/cart', productController.cart);
 //listado de productos + borrado 
 router.get("/list", productController.productList);
 router.get("/create", productController.newProductView);
+
+
 router.delete("/:id/delete", productController.delete);
+//Actualizar productos
+
+ router.get("/:id/update", productController.edit);
+ router.patch("/:id/update", productController.edit);
 
 /*----Rutas para vista de detalle de producto----*/
 router.get('/:id', productController.productDetail);

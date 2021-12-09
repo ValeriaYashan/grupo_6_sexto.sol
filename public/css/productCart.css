@@ -1,0 +1,175 @@
+@import url("general.css");
+
+/* Estilos del encabezado */
+.encabezado{
+    text-align: center;
+    font-style: italic;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Estilos de visualizacion de productos */
+
+.visualizacion-productos{
+    background-color: var(--gold);
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+
+}
+.imagen-producto{
+    width: 25%;
+}
+
+.imagen-producto .img{
+    width: 100%;
+    padding: 5px;
+}
+
+.resumen{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* padding-top: 15px;
+    padding-bottom: 15px; */
+    width: 35%;
+}
+
+.cantidad_car{
+    display: flex;
+}
+.masmenos{
+    padding-left: 10px;
+}
+.masmenos #cantidad{
+    width: 20px;
+    align-self: center;
+    background-color: transparent;
+    border: transparent;
+}
+.masmenos button{
+    border:none;
+    background-color: transparent;
+    border: var(--dark) solid 2px;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+}
+/* .resumen p{
+    margin: 10px;
+} */
+
+.total p{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+    width: 30%;
+    font-weight: bold;
+    padding-right: 20px;
+    padding-top: 50px;
+}
+
+.total button{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+    padding-top: 30px;
+    padding-right: 20px;
+    color: var(--dark);
+    background-color: transparent;
+    border: transparent;
+}
+.total button img{
+    width: 20px;
+    height: 20px;
+}
+.total button img:hover{
+    width: 25px;
+    height: 25px;
+    transition: .3s;
+}
+/* Estilos de la seccion de precios */
+
+.precios{
+    margin-top: 20px;
+    border-top: solid 1px var(--dark);
+    padding-top: 10px;
+    display:flex;
+    justify-content: flex-end;
+    padding-right: 20%;
+}
+
+.desglose-indiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.desglose-indiv p{
+    padding-bottom: 12px;
+}
+
+.btn-pagar{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.btn-pagar button{
+    width: 60%;
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Estilos para media querie*/
+@media(min-width: 1025px) {
+    .carrito-general{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .cuadro-productos{
+        width: 65%;
+    }
+
+    .cuadro-resumen{
+        width: 30%;
+        border-left: solid 1px var(--dark);
+        margin-bottom: 30px;
+    }
+
+    .precios{
+        padding-top: 30px;
+        border-top: none;
+        justify-content: flex-start;
+        padding-left: 15px;
+        font-size: 18px;
+
+    }
+
+    .visualizacion-productos{
+        /* height: 150px; */
+        width: 100%;
+
+    }
+
+    .resumen{
+        /* justify-content: center;
+        padding-left: 20px; */
+        font-size: 18px;
+    }
+
+    .total{
+        margin-right: 30px;
+        font-size: 18px;
+    }
+
+    .btn-pagar button{
+        width: 80%;
+    }
+
+}

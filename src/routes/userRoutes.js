@@ -69,7 +69,7 @@ router.post('/', userController.logUser);
 /*----Rutas para vista de formulario de registro----*/
 router.get('/register', guestMiddleware, userController.register);
 router.post('/register', fileUpload.single('imagenUsuario'), validateRegister, validatePassword, userController.procesarRegistro);
-//router.post('/register', guestMiddleware, validateRegister, validatePassword, userController.procesarRegistro);
+router.post('/register', guestMiddleware, validateRegister, validatePassword, userController.procesarRegistro);
 
 /*----Ruta para info de perfil de usuario-----*/
 router.get('/:id/profile', logMiddleware, userController.profile);

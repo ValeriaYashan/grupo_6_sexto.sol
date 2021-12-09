@@ -29,7 +29,7 @@ const fileUpload = multer({storage: multerDiskStorage})
 const productController = require('../controllers/productController');
 
 /*----Rutas para vista de productos----*/
-router.get('/', productController.productos);
+/*router.get('/', productController.productos);*/
 
 /*----Rutas para vista de plantas sin flor----*/
 router.get('/sinflor',productController.sinflor);
@@ -46,22 +46,20 @@ router.get('/:id/edit', logMiddleware, adminMiddleware, productController.edit);
 router.patch('/:id', fileUpload.any(), productController.update);
 
 /*----Rutas para vista de carrito de compras----*/
-/*router.get('/productCart', logMiddleware, productController.productCart);*/
+router.get('/productCart', logMiddleware, productController.productCart);
+
 // carrito
 router.get('/cart', productController.cart);
 
-//listado de productos + borrado está en backup
+//listado de productos + borrado 
 router.get("/list", productController.productList);
+router.get("/create", productController.newProductView);
 router.delete("/:id/delete", productController.delete);
-
-/*----Rutas para vista de finalizar compra----*/
-/*router.get('/finalizaCompra',logMiddleware, productController.finalizaCompra);*/
 
 /*----Rutas para vista de detalle de producto----*/
 router.get('/:id', productController.productDetail);
 
-/*----Rutas para borrar producto----*/
-router.delete('/:id', productController.delete);
+
 
 
 

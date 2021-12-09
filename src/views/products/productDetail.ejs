@@ -14,7 +14,7 @@
             <div class="imagenes">
                 <!-- Vista de producto actual -->
                 <div>
-  <!-- ARREGLAR HACE QUE NO FUNCIONE CRUD --> <img class="imagen-principal" src="/img/<%=product.category%>/<%=product.images[0]%>" alt="">
+ <img class="imagen-principal" src="/img/<%=product.category%>/<%=product.images[0]%>" alt="">
                 </div>
           
             </div>
@@ -27,10 +27,22 @@
                 </div>
 
                 <!-- Seleccion de tallas y cantidades -->
-                <div class="datos-compra">
+             
+               <section>
+                <div class="resalta-campo">
+                    <label  for="cantidad">Cantidad:</label>
+                    <select name="quantity" id="cantidad" class="quantity">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select> 
+                </div>
+               </section>  
+                         <div class="datos-compra">
                     <form action="">
                         <div class="resalta-campo">
-                            <p><strong>Precio: </strong> <span>$<%=product.price%></span></p>
                             <p><strong>Material: </strong> <span><%= product.material%></span></p>
                         </div>
                         <div class="resalta-campo">
@@ -41,16 +53,7 @@
                                 <option value="L">Grande</option>
                             </select>
                         </div>
-                        <div class="resalta-campo">
-                            <label  for="cantidad">Cantidad:</label>
-                            <select name="quantity" id="cantidad" class="quantity">
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                            </select> 
-                        </div>
+                        <p><strong>Precio: </strong> <span>$<%=product.price%></span></p>
                         <div class="contenedor-btn">
                             <button type="submit" class="submit btn">Añadir al carrito</button>
                         </div>

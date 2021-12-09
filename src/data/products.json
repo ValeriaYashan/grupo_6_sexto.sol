@@ -185,5 +185,22 @@
      "img-rosas-rojas.jpg"
     ],
     "material": "cerámica"
+   },
+   {
+   "id": 11,
+    "name": "Santa Rita",
+    "description": "Este tipo de flores ",
+    "price": 982,
+    "discount": 20,
+    "category": "conflor",
+    "size": {
+     "S": 20,
+     "M": 20,
+     "L": 20
+    },
+    "images": [
+     "img-rosas-rojas.jpg"
+    ],
+    "material": "porcelana"
    }
    ]

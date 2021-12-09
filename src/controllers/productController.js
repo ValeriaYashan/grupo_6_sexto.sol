@@ -16,6 +16,9 @@ const productController = {
     productCart : (req, res) => {
         res.render('./products/productCart')
     },
+    /*productCart : (req, res) => {
+        res.render('./products/productCart', {user: req.session.user ? req.session.user : undefined});
+    },*/
     cart : (req, res) => {
         res.render('./products/cart', {user: req.session.user ? req.session.user : undefined});
     },
@@ -33,6 +36,8 @@ const productController = {
     create: (req,res) => {
         res.render('./admin/addProduct', {user: req.session.user ? req.session.user : undefined });
     },
+  
+
     //Pantalla de creacion de productos + logica de guardado en backup
     newProductView: (req, res) => {
         res.render('products/create');
@@ -165,11 +170,11 @@ const productController = {
         //Lógica para almacenar informacion y editar producto
         productToEdit ={
             id: productToEdit.id,
+            category: productCategory,
             name: productName,
             description: productDescription,
             price: productPrice,
-            discount: productDiscount,
-            category: productCategory,
+            
             size: {
                 S: productToEdit.size.S + productQuantS,
                 M: productToEdit.size.M + productQuantM,
@@ -221,10 +226,6 @@ const productController = {
         }
     },
    
-
-
-
-
 
 
 

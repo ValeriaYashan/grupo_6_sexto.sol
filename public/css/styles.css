@@ -29,9 +29,7 @@ header{
     font-size: 2rem;
     font-weight: bold;
 }
-.busqueda{
-    width: 150px
-}
+
 .navegacion a {
     display: block;
     text-decoration: none;

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <%- include('../partials/head.ejs') %>
-    <link rel="stylesheet" href="/css/editProduct.css">
+    <link rel="stylesheet" href="/css/edit.css">
     <title>Editando producto</title>
 </head>
 <body>
@@ -54,11 +54,6 @@
                         <label for="price">Precio: $</label>
                         <input type="text" name ="price" id="price" value="<%=product.price%>">
                     </section>
-
-                    <section class="descuento">
-                        <label for="discount">Descuento:</label>
-                        <input type="number" name="discount" id="discount" value="<%=product.discount%>">
-                    </section>
     
                     <section class="categoria">
                         <label for="category">Categoría: </label>
@@ -72,8 +67,9 @@
                         </div>
                     </section>
 
+                    <p><strong>Material de maceta:</strong></p>
                     <section class="materials">
-                        <label for="materials">Material: </label>
+                        <label for="materials"> </label>
                         <div class="mat-opcion">
                             <input type="radio" name="materials" id = "porcelana" value="porcelana" <%= product.material == "oro" ? "checked" : ""%>>
                             <label for="porcelana">Porcelana</label>
@@ -89,7 +85,8 @@
                     </section>
     
                     <section class="tallas">
-                        <p><strong>Tamaño de maceta:</strong></p>
+
+                        <p><strong>Tamaño de maceta y cantidad de cada una:</strong></p>
                             
                             <div class="tallas-text">
                                 <div class="quant">
@@ -106,6 +103,8 @@
                                 </div>
                             </div>
                     </section>
+
+                            <!-- imagenes de plantas y macetas -->
                     <section class="agregar-img">
                         <p><strong>Imágenes:</strong></p>
                         <div class="imagenes">
@@ -116,18 +115,26 @@
                                 <li>
                                     <input type="file" name="image2" id="image"><label>Imagen 2</label>
                                 </li>
+                                <li>
+                                    <input type="file" name="image3" id="image"><label>Imagen 3-maceta</label>
+                                </li>
                             </ul> 
                         </div>
                     </section>                   
-    
-                    <section class="botones">
-                        <button>Cancelar</button>
-                        <button  type="reset">Borrar todo</button>
-                        <button type="submit">Guardar cambios</button>
-                    </section>
+      <!-- botones -->
+      <section class="botones">
+        <button>Cancelar la operación</button>
+        <button  type="reset">Borrar </button>
+        <button type="submit">Guardar producto editado</button>
+    </section>
                 </form>
         </div>
         
     </main>
+
+    <%- include("../partials/footer.ejs")%>
 </body>
+
+
+
 </html>

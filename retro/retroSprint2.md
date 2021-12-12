@@ -1,3 +1,4 @@
+#Retro 2
 Valeria: Comenzar a hacer: buscar información adicional al curso.Volver a ver parte de las clases
 Hacer más: mejorar el trello para organizar el trabajo de cada uno.
 Continuar haciendo:conectarme desde la calle camino a casa durante la primera parte de la clase para asegurarme de poder ingresar a tiempo.
@@ -10,3 +11,6 @@ Clonmorfo:
 3. Continuar haciendo: Buscar info externa al curso, ver videos tutoriales en youtube, ver codigos de otras paginas.
 4. Hacer menos: Estar con el celular en mis periodos de programcion/estudio/clase.
 5. Dejar de hacer: Atrasarme con los modulos, el sprint pasado me mato el hecho de no estar al dia.
+
+
+

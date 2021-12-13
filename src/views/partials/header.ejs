@@ -55,12 +55,13 @@
                         <% } %>
                     <li>
                         <form action="/user/logoff?_method=PUT" method="post">
-                            <a href="#"><button type="submit">Cerrar sesión</button></a>
+                            <a href="#"><button type="submit"></i>Cerrar sesión</button></a>
                         </form>
+                       
                     </li>
                     <% } else { %>
                     <li><a href="/user/login"><i class="fas fa-user"></i>Iniciar sesión</a></li>
-                    <li><a href="/user/register">Registrarse</a></li>
+                    <li><a href="/user/register">Registrarse</a></li>                 
                     <% } %>
                 </ul>
             </li>

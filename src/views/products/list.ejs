@@ -55,19 +55,22 @@
                                                         Nombre
                                                     </th>
                                                     <th scope="col">
+                                                        Categoría
+                                                      </th>
+                                                    <th scope="col">
                                                         Descripción
                                                     </th>
                                                     <th scope="col">
-                                                      Cantidad
+                                                        Precio
+                                                    </th>
+                                                    <th scope="col">
+                                                        Tamaño de maceta y cantidad
                                                     </th>
                                                     <th scope="col">
                                                         Material
                                                     </th>
                                                     <th scope="col">
-                                                        Tamaño de maceta
-                                                    </th>
-                                                    <th scope="col">
-                                                        Precio
+                                                       imagenes
                                                     </th>
                                                     <th scope="col">
                                                         Editar
@@ -87,22 +90,24 @@
                                                         <%= productList[i].name %>
                                                     </td>
                                                     <td>
-                                                        <%= productList[i].desc %>
+                                                        <%= productList[i].category %>
                                                     </td>
                                                     <td>
-                                                        <% productList[i].img %>
+                                                        <%= productList[i].description %>
                                                     </td>
-                                                    <td>
-                                                        <% productList[i].category %>
-                                                    </td>
-                                                    <td>
-                                                        <%= productList[i].size %>
-                                                    </td>
-
                                                     <td>
                                                         <%= productList[i].price %>
                                                     </td>
-
+                                    
+                                                    <td>
+                                                        <%= productList[i].size %>
+                                                    </td>
+                                                    <td>
+                                                        <%= productList[i].material %>
+                                                    </td>
+                                                    <td>
+                                                        <%= productList[i].img %>
+                         
                                                     <td>
                                                         <form action="/products/<%=productList[i].id %>/update" method="GET">
                                                             <button type="submit" class="btn-accion">
@@ -132,10 +137,6 @@
                     </div>
                     <!-- col -->
 
-
-
-
-
                 </div>
                 <!-- fila -->
 
@@ -145,12 +146,8 @@
                     </a>
                 </div>
 
-
-
                 <!-- fila -->
                 <div class="row">
-
-
 
                 </div>
                 <!-- fila -->

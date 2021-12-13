@@ -194,7 +194,7 @@ const productController = {
 
         //Reescribiendo productos
         fs.writeFileSync(productsPath, JSON.stringify(newProducts, null, ' '));
-		res.redirect('/products');
+		res.redirect('/products/');
     },
     delete: (req,res) => {
         const products = JSON.parse(fs.readFileSync(productsPath, 'utf-8'));

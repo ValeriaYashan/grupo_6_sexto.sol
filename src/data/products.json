@@ -3,7 +3,7 @@
   "id": 1,
   "name": "Cola de Tigre",
   "description": "La sansevieria trifasciata es una planta muy utilizada en el interior y que destaca por su fácil cuidado. A menudo es llamada también cola de lucio, lengua de suegra, lengua de gato, lengua de tigre o espada de San Jorge. Cuenta con muchas subespecies, como la sansevieria laurentii.",
-  "price": 800,
+  "price": 1500,
   "size": {
    "S": 20,
    "M": 20,
@@ -164,6 +164,19 @@
   "images": [
    "img-rosas-rojas.jpg"
   ],
+  "material": "cerámica"
+ },
+ {
+  "id": 11,
+  "category": "conflor",
+  "name": "Clavel",
+  "description": "Agregar información",
+  "price": 2500,
+  "size": {
+   "S": 1,
+   "M": 0,
+   "L": 0
+  },
   "material": "cerámica"
  }
 ]

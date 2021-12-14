@@ -26,7 +26,7 @@
                     <p class="descripcion-producto"><%=product.description%></p>
                 </div>
 
-                <!-- Seleccion de tallas y cantidades -->
+                <!-- Seleccion de tamaño y cantidades -->
              
                <section>
                 <div class="resalta-campo">
@@ -58,6 +58,7 @@
                             <button type="submit" class="submit btn">Añadir al carrito</button>
                         </div>
                     </form>
+                    
                     <% if(locals.user && user.category == "admin") { %>
                     <section class="user-options">
                         <a href="/products/<%=product.id%>/edit" class="editar"><button class="editar-btn">Editar</button></a>
@@ -75,6 +76,7 @@
                     <label for="add-comment">Dejanos tu comentario, nos ayudará a seguir mejorando</label>
                     <input type="text" class="comment-title" placeholder="Título del comentario">
                     <textarea name="comment" id="add-comment" cols="20" rows="10" placeholder="Escribe aquí tu comentario"></textarea>
+                      <!-- Botones-->
                     <div class="comment-buttons">
                         <button type="reset">Borrar</button>
                         <button type="submit">Guardar</button>

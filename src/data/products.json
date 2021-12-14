@@ -1,19 +1,20 @@
 [
  {
   "id": 1,
-  "name": "Cola de Tigre",
   "category": "sinflor",
+  "name": "Cola de Tigre",
   "description": "La sansevieria trifasciata es una planta muy utilizada en el interior y que destaca por su fácil cuidado. A menudo es llamada también cola de lucio, lengua de suegra, lengua de gato, lengua de tigre o espada de San Jorge. Cuenta con muchas subespecies, como la sansevieria laurentii.",
-  "price": 800,
+  "price": 1800,
   "size": {
    "S": 1,
-   "M": 1,
+   "M": 3,
    "L": 1
   },
   "images": [
-   "img-cola-de-tigre.jpg"
+   "img-cola-de-tigre.jpg",
+   "img-sinflor-25046-cerámica.jpg"
   ],
-  "material": "plástico"
+  "material": "cerámica"
  },
  {
   "id": 2,
@@ -25,12 +26,12 @@
    "S": 1,
    "M": 1,
    "L": 1
-},
-"images": [
- "img-potus.jpg"
-],
-"material": "porcelana"
-},
+  },
+  "images": [
+   "img-potus.jpg"
+  ],
+  "material": "porcelana"
+ },
  {
   "id": 3,
   "name": "Potus",
@@ -49,17 +50,18 @@
  },
  {
   "id": 4,
-  "name": "Begonia",
   "category": "conflor",
+  "name": "Begonia",
   "description": "Son plantas terrestres (a veces epífitas) herbáceas, algunas de porte semiarbustivo o incluso pequeños árboles y otras trepadoras, perennes excepto en climas fríos, es el aérea donde la planta muere. Las flores son muy diversas tanto en forma y tamaño como en color; son unisexuales, la masculina contiene numerosos estambres, la femenina posee un ovario inferior con 2 o 4 estigmas ramificados. El fruto es una cápsula alada que contiene gran cantidad de diminutas semillas. Las hojas son asimétricas y al igual que las flores, difieren mucho de una a otra especie, desde variadas como las de Begonia brevirimosa a verde brillante en Begonia ulmifolia.",
-  "price": 700,
+  "price": 800,
   "size": {
    "S": 25,
    "M": 22,
    "L": 23
   },
   "images": [
-   "img-begonia.jpg"
+   "img-begonia.jpg",
+   "img-conflor-66952-cerámica.jpg"
   ],
   "material": "cerámica"
  },
@@ -129,8 +131,8 @@
  },
  {
   "id": 9,
-  "name": "Santa Rita",
   "category": "conflor",
+  "name": "Santa Rita",
   "description": "Este tipo de flores ",
   "price": 982,
   "size": {
@@ -139,7 +141,8 @@
    "L": 20
   },
   "images": [
-   "img-rosas-rojas.jpg"
+   null,
+   "img-conflor-99365-cerámica.jpg"
   ],
   "material": "cerámica"
  },
@@ -149,7 +152,6 @@
   "category": "conflor",
   "description": "Este tipo de flores ",
   "price": 982,
-  
   "size": {
    "S": 20,
    "M": 20,
@@ -176,5 +178,39 @@
    "default-image.svg"
   ],
   "material": "porcelana"
+ },
+ {
+  "id": 12,
+  "category": "conflor",
+  "name": "Claveles sin imagen",
+  "description": "Completar",
+  "price": 1500,
+  "size": {
+   "S": 0,
+   "M": 2,
+   "L": 0
+  },
+  "images": [
+   "default-image.svg",
+   "img-conflor-35206-cerámica.jpg"
+  ],
+  "material": "cerámica"
+ },
+ {
+  "id": 13,
+  "category": "sinflor",
+  "name": "Crisantemos en maceta",
+  "description": "",
+  "price": 80000,
+  "size": {
+   "S": 2,
+   "M": 2,
+   "L": 7
+  },
+  "images": [
+   "default-image.svg",
+   "img-sinflor-74468-plástico.jpg"
+  ],
+  "material": "plástico"
  }
 ]

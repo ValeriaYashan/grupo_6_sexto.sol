@@ -15,7 +15,7 @@ Vivero: venta de plantas, macetas y artículos relacionados con la jardineria.
 ```
 ## Wireframe
 ```
-El diseño de los bocetos se realizará en Adobe XD.
+El diseño de los bocetos se realizó en Adobe XD.
 ```
 ## Público
 ```
